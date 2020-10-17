@@ -5,7 +5,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
     <script src="index2.js"></script>
     <script src='d3-adjacency-matrix-layout.js' type='text/JavaScript'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js'></script>
 </head>
 <style>
     svg {
@@ -21,6 +20,33 @@
         stroke: black;
         stroke-width: 1px;
         stroke-opacity: 0.25;
+    }
+    text.active {
+        fill: red;
+    }
+
+    rect {
+        /*fill: steelblue;*/
+        fill-opacity: 0.7;
+    }
+    rect:hover {
+        fill-opacity: 1;
+    }
+
+    .toolTip {
+        position: absolute;
+        display: none;
+        min-width: 80px;
+        height: auto;
+        background: none repeat scroll 0 0 #ffffff;
+        border: 1px solid #6F257F;
+        padding: 14px;
+        text-align: center;
+    }
+    .chart-label{
+        font-weight: bolder;
+        font-size: 18px;
+        text-anchor: middle;
     }
 </style>
 <body>
