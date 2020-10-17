@@ -56,7 +56,7 @@ function createAdjacencyMatrix(data) {
                 .style("left", event.pageX - 50 + "px")
                 .style("top", event.pageY - 70 + "px")
                 .style("display", "inline-block")
-                .html("X: "+y_x[1] +", Y: "+y_x[0]);
+                .html("X: "+y_x[0] +", Y: "+y_x[1]);
         }
     }
 
